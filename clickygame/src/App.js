@@ -67,6 +67,7 @@ render() {
     <h2>Score: {this.state.count}  | Best Score: {this.state.bestScore} </h2> 
       <div className= "grid-container">
       {this.state.Friends.map(Friend =>(<Card
+        key={Friend.id}
         id={Friend.id}
         name={Friend.name}
         image={Friend.image}
